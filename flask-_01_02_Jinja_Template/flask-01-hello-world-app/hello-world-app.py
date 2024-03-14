@@ -1,5 +1,6 @@
 from flask import Flask 
 app = Flask(__name__)
+app.debug = True
 @app.route('/')
 def head():
      return 'Hello world Oktay'
@@ -19,4 +20,4 @@ def fourth(id):
 if __name__ == '__main__':
 
      # app.run(debug=True)
-     app.run(host= '0.0.0.0', port=80)
+     app.run(host= '0.0.0.0', port=8080)
